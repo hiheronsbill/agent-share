@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="agent-demo" />
+        <module name="agent-demo-web" />
+        <module name="hotdev-demo" />
+        <module name="zarthas-demo" />
+        <module name="attach-demo" />
+        <module name="devtools-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="arthas-demo" target="11" />
+      <module name="third-jar" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="agent-demo-web" options="-parameters" />
+      <module name="arthas-demo" options="-parameters" />
+      <module name="devtools-demo" options="-parameters" />
+      <module name="zarthas-demo" options="-parameters" />
+    </option>
+  </component>
+</project>
